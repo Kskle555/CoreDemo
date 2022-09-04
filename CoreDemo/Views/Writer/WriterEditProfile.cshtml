@@ -1,0 +1,47 @@
+﻿@model UserUpdateViewModel
+@{
+    ViewData["Title"] = "WriterEditProfile";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+
+<h1>WriterEditProfile</h1>
+
+
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Writer Profile Edit</h4>
+                <p class="card-description"> Basic form elements </p>
+                <br />
+              
+                <form class="forms-sample" method="post">
+                    <div class="form-group">
+                        <label for="exampleInputName1">Name</label>
+                        <input type="text" asp-for="@Model.namesurname" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail3">Nickname</label>
+                        <input type="text" asp-for="@Model.username" class="form-control" />
+
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail3">Email address</label>
+                        <input type="text" asp-for="@Model.mail" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail3">Yeni Şifreniz</label>
+                        <input type="text" asp-for="@Model.password" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail3">Image</label>
+                        <input type="text" asp-for="@Model.imageurl" class="form-control" />
+                    </div>
+
+                    <button type="submit" class="btn btn-gradient-primary mr-2">Submit</button>
+                    <button class="btn btn-light">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
